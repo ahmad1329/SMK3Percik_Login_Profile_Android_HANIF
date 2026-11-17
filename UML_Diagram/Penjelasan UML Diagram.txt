@@ -1,0 +1,50 @@
+Flowcart: 1. Mulai/Masuk Aplikasi
+	    2. Sudah menjadi anggota/sudah memiliki akun, kalau sudah lanjut ke proses login menggunakan email dan password...jika belom memiliki akun, user/pengguna dapat meilih untuk pendaftaran akun baru
+          3. Ingin mendaftar? pengguna di berikan pilihan pendaftaran akun jika ingin mendaftar user/pengguna di arahkan ke halaman pendaftaran jika tidak... pengguna dapat menggunakan metode login yang tersedia... seperti menggunakan google, meta/facebook 
+          4. Login Dengan Google (Pengguna dapat memilih login menggunakan akun Google. Setelah memilih, sistem akan melakukan proses autentikasi untuk memverifikasi akun Google tersebut.)
+	    5. Login Dengan Meta (Pengguna juga dapat memilih login menggunakan akun Meta (Facebook). Sistem kemudian melakukan autentikasi untuk memverifikasi akun pengguna.)
+	    6. Masukkan Email Dan Pasword (Jika pengguna memilih login secara manual, pengguna harus memasukkan alamat email dan kata sandi yang telah didaftarkan.)
+	    7. Informasi Valid (Sistem melakukan pemeriksaan terhadap email dan password yang dimasukkan.)
+	       (Jika informasi valid, pengguna berhasil melewati proses login dan diarahkan ke proses selesai.)
+	       (Jika informasi tidak valid, sistem menampilkan pemberitahuan login gagal.)
+	    8. Login Gagal (Jika email atau password yang dimasukkan salah, sistem menampilkan informasi bahwa login gagal.)
+	    9. Lupa Kata Sandi (Setelah login gagal, pengguna dapat memilih apakah ingin melakukan pemulihan kata sandi.)
+	       (Jika lupa kata sandi, pengguna diarahkan ke halaman reset kata sandi.)
+	       (Jika tidak, pengguna dapat kembali mencoba login.)
+	   10. Reset Kata Sandi (Pengguna melakukan proses pengaturan ulang kata sandi agar dapat mencoba login kembali.)
+	   11. Keluar Exit (Pengguna dapat memilih untuk keluar atau membatalkan proses login.)
+	   12. Selesai/End (Proses login berakhir setelah pengguna menyelesaikan alur yang dipilih.)
+
+
+Activity Diagram: 1. Mulai (Start) :Proses dimulai ketika user/pengguna ingin mengakses aplikasi.
+			2. Buka Aplkasi : User/Pengguna membuka aplikasi yang ingin digunakan.
+			3. Menampilkan halaman Login : Setelah aplikasi dibuka, sistem secara otomatis menampilkan halaman login yang berisi kolom untuk memasukkan username atau email dan password.
+			4. Email / Username + Password (Pengguna memasukkan email atau username beserta password yang telah didaftarkan sebelumnya.)
+			5. Klik Tombol Login (Setelah mengisi email atau username dan password, pengguna menekan tombol Login untuk mengirimkan data ke sistem.)
+			6. Memvalidasi Username (Sistem menerima data yang dimasukkan oleh pengguna, kemudian melakukan pemeriksaan terhadap username atau email dan password.)
+			7. Data Valid? : Sistem memeriksa apakah data login yang dimasukkan sudah benar.
+						(Jika data valid: Sistem melanjutkan proses login dan memberikan akses kepada pengguna.)
+						(Jika data tidak valid: Sistem menampilkan pesan kesalahan kepada pengguna.)
+			8. Menampilkan Pesan Kesalahan : Jika data yang dimasukkan salah, sistem menampilkan pesan kesalahan. Pengguna kemudian dapat kembali memasukkan email atau username dan password yang benar.
+			9. Masuk ke Sistem (Login Berhasil) : Jika data yang dimasukkan benar, sistem memberikan akses kepada pengguna untuk masuk ke dalam aplikasi.
+		     10. Masuk ke Beranda Aplikasi : Setelah proses login berhasil, pengguna diarahkan menuju halaman beranda aplikasi.
+
+
+Usecase Diagram: 1. Use Case Diagram tersebut menggambarkan hubungan antara pengguna (Actor) dengan fitur-fitur yang tersedia di dalam aplikasi, khususnya proses login, autentikasi server, penggunaan fitur Facebook, dan logout.
+				Pada diagram tersebut terdapat satu aktor dan beberapa aktivitas utama.
+		     2. Penjelasan setiap bagian
+			1. Actor (Pengguna) : Actor merupakan orang yang menggunakan atau berinteraksi dengan aplikasi. Pengguna memiliki hak untuk melakukan login dan menggunakan fitur yang tersedia di dalam aplikasi.
+			2. Masukkan Username & Password : Pengguna memasukkan username dan password yang sudah terdaftar untuk melakukan login ke dalam aplikasi.
+			3. Login : Login merupakan proses masuk ke dalam aplikasi menggunakan akun yang dimiliki pengguna. Proses ini berkaitan dengan pemasukan username dan password.
+			4. Mengautentikasi Server : Setelah pengguna melakukan login, sistem akan berkomunikasi dengan server untuk memeriksa dan memastikan bahwa informasi akun yang dimasukkan benar dan sesuai dengan data yang tersimpan.
+			5. Penggunaan Fitur-Fitur Facebook : Setelah berhasil masuk ke aplikasi, pengguna dapat menggunakan fitur-fitur Facebook yang tersedia. Fitur tersebut merupakan bagian dari fungsi aplikasi yang digambarkan pada diagram.
+			6. Logout : Logout merupakan proses ketika pengguna ingin keluar dari akun atau mengakhiri sesi penggunaan aplikasi.
+		     3. Penjelasan hubungan antar-Use Case
+				Include (>) : Include merupakan hubungan yang menunjukkan bahwa suatu aktivitas selalu membutuhkan atau menyertakan aktivitas lainnya.
+					- Masukkan Username & Password terhubung dengan Login.
+					- Login menyertakan proses Mengautentikasi Server.
+					- Penggunaan fitur-fitur Facebook terhubung dengan Mengautentikasi Server.
+					- Logout juga digambarkan memiliki hubungan include dengan Mengautentikasi Server.
+
+				Extend (>) : Extend merupakan hubungan yang menunjukkan adanya aktivitas tambahan atau kondisi tertentu yang memperluas aktivitas lainnya.
+							hubungan extend ditunjukkan antara Logout dan Penggunaan Fitur-Fitur Facebook.
