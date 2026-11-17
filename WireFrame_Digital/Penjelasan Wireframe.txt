@@ -1,0 +1,30 @@
+	Halaman Login
+	1. Logo Aplikasi: Menampilkan identitas atau simbol aplikasi.
+	2. Name: Kolom untuk memasukkan nama pengguna atau username.
+	3. Password: Kolom untuk memasukkan kata sandi akun.
+	4. Log in: Tombol untuk memproses login.
+	5. Forgot Password?: Fitur untuk membantu pengguna yang lupa kata sandi.
+	6. Signup!: Tautan untuk pengguna yang belum memiliki akun agar dapat melakukan pendaftaran.
+Alur penggunaannya:
+      Pengguna membuka aplikasi, kemudian memasukkan nama dan password. Setelah itu, pengguna menekan tombol Log in. Sistem akan memeriksa data akun. Jika benar, pengguna dapat masuk ke aplikasi.
+
+	1. Halaman Create New Account
+	2. Name: Kolom untuk memasukkan nama pengguna.
+	3. Email: Kolom untuk memasukkan alamat email.
+	4. Password: Kolom untuk membuat kata sandi akun.
+	5. Date of Birth: Kolom untuk memilih tanggal lahir pengguna.
+	6. Sign up: Tombol untuk mengirimkan data pendaftaran.
+	7. Already Registered? Log in here: Tautan untuk pengguna yang sudah memiliki akun agar kembali ke halaman Login.
+	8. Tombol panah: Digunakan untuk kembali ke halaman sebelumnya.
+Alur penggunaannya:
+	Pengguna yang belum mempunyai akun membuka halaman pendaftaran. Kemudian, pengguna mengisi nama, email, password, dan tanggal lahir. Setelah semua data diisi, pengguna menekan tombol Sign up. Sistem akan memproses data pendaftaran untuk membuat akun baru.
+
+
+	1. Name: Menampilkan nama pengguna.
+	2. Email: Menampilkan alamat email pengguna.
+	3. Password/Keamanan: Menampilkan informasi keamanan akun.
+	4. Nomor Telepon: Menampilkan nomor telepon pengguna.
+	5. Keluar/Logout: Tombol untuk mengakhiri sesi penggunaan akun.
+	6. Tombol panah: Digunakan untuk kembali ke halaman sebelumnya.
+Alur penggunaannya:
+	Setelah pengguna berhasil login, pengguna dapat masuk ke halaman Profil untuk melihat informasi akun yang dimiliki. Jika ingin mengakhiri penggunaan aplikasi, pengguna dapat menekan tombol Keluar/Logout. Sistem kemudian mengakhiri sesi akun dan mengarahkan pengguna kembali ke halaman Login.
